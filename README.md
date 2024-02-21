@@ -1,6 +1,8 @@
 # Conway's Game of Life
 
-**An interactive implementation of Conway's Game of Life.**
+An interactive implementation of Conway's Game of Life.
+
+![](conway_gif.gif)
 
 ## Introduction
 Conway's Game of Life is a cellular simulation developed by John Conway in 1970. The world of this simulation is an infinite grid of cells, and each cell can either be "off" or "on". Given an initial state, the progression of the simlulation is determined by a simple set of rules.
