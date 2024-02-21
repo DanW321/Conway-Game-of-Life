@@ -16,6 +16,25 @@ Some patterns of cells are stable, meaning they do not change without influence 
 Continue reading to learn more about this specific implementation!
 
 ## Program
+Running the program will display a blank grid with which the user can interact using both mouse and keyboard.
+
+**Mouse**
+- <ins>Left Click</ins> to toggle the state of individual grid cells and place a preset object.
+- <ins>Right Click</ins> and drag to "brush" grid cells on.
+
+**Keyboard**
+- Press <ins>Space</ins> to play or pause the simulation
+- Press the <ins>Left and Right Arrows</ins> to adjust the simulation speed
+- Press <ins>R</ins> to randomize the grid
+- Press <ins>C</ins> to clear the grid
+- Press <ins>1-5</ins> to enter dragging mode
+- Press <ins>esc</ins> to exit dragging mode
+
+There are five preset objects hardcoded in presets.py. These are patterns that exhibit interesting behavior such as periodicity, infinite movement, and more (taken from [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life#cite_note-68)). Play around with the simulation and see if you can discover your own interesting patterns!
+
+The game environment is supposed to be infinite, but this implementation uses a toroidal array to simulate infinity. This means that the top and bottom edges are stitched together, as well as the left and right edges. This is a good but not perfect representation of an infinite grid, as certain patterns can "wrap around" and influence other patterns that they otherwise would never touch.
+
+The graphical side of this program is implemented using the [pygame](https://www.pygame.org/docs/) package.
 
 
 
