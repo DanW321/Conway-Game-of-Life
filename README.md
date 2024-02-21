@@ -31,7 +31,7 @@ Run conway.py to start interacting with the simulation.
 - Press <ins>1-5</ins> to enter dragging mode
 - Press <ins>esc</ins> to exit dragging mode
 
-There are five preset objects hardcoded in presets.py. These are patterns that exhibit interesting behavior such as periodicity or infinite movement (taken from [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life#cite_note-68)). Press 1-5 while the game is paused to view and place these patterns on the grid. Play around with the simulation and see if you can discover your own interesting patterns!
+There are five preset objects hardcoded in presets.py. These are patterns that exhibit interesting behavior such as periodicity or infinite movement (taken from [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life#cite_note-68)). Press 1-5 while the game is paused to view and place these patterns on the grid. Play around with the simulation and you may discover your own interesting patterns!
 
 ## Notes
 The game environment is supposed to be infinite, but this implementation uses a toroidal array to simulate infinity. This means that the top and bottom edges of the grid are stitched together, as well as the left and right edges. This is a good but not perfect representation of an infinite grid, as certain patterns can "wrap around" and influence other patterns that they otherwise would never touch.
