@@ -1,5 +1,4 @@
 # Conway's Game of Life
-
 An interactive implementation of Conway's Game of Life.
 
 ![](conway_gif.gif)

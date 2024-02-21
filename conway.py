@@ -84,7 +84,7 @@ class Draggable(object):
 
 
 def check_flip(row: int, col: int) -> bool:
-    """ Checks if the state of a shell should be flipped
+    """ Checks if the state of a cell should be flipped
 
     This function checks the eight neighbors around a cell 
     and, based on a set of rules, determines whether its 
@@ -147,7 +147,7 @@ def cell_handler():
 def display_text(text: str, num: int):
     """ Displays text 
     
-    A helper function that displays the passed in text
+    A helper function that displays the passed-in text
     at a certain location on the screen.
 
     :param text: the text to display
@@ -192,7 +192,7 @@ def drag_handler():
     """ Handles draggable objects
 
     This function handles draggable objects as they are 
-    moved around the screen by the user and possibly placed.
+    moved around the screen and possibly placed by the user.
     """
     # gets the row and column of the mouse
     global dragging
@@ -303,7 +303,7 @@ def key_handler():
 def main_handler(click: bool):
     """ Main handler of program
 
-    This function handles the logistics of the program
+    This function handles the ordering of the program
     and calls other handler methods when appropriate.
 
     :param flag: a boolean, was the mouse pressed?
